@@ -30,7 +30,7 @@ printenv
 env
 10. **/proc/PID/cmdline** - полный путь до исполняемого файла процесса [PID]  
 **/proc/PID/exe** - содержит ссылку до файла запущенного для процесса [PID]
-11. >vagrant@vagrant:~$ grep sse /proc/cpuinfo
+11. >vagrant@vagrant:~$ grep sse /proc/cpuinfo  
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl x
 topology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16 pcid sse4_1 **sse4_2** x2apic movbe popcnt aes xsave avx rdrand hypervisor lahf_lm abm invpcid_single pti
  fsgsbase avx2 invpcid md_clear flush_l1d  
