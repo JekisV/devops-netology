@@ -40,7 +40,7 @@ root@vagrant:/etc/systemd/system# cat /opt/node/exporter_
 --collector.uname
    ```
 Не смог разобраться с подзаданием "предусмотрите возможность добавления опций к запускаемому процессу через внешний файл (посмотрите, например, на systemctl cat cron)", не смог понять, как я должен передавать параметры запуска, в файле параметры прописаны, но не понятно, считываются они при запуске или нет. В этом моменте мне требуется помощь преподавателя!  
-Сервис после ребута вм поднимается и работает.
+Сервис после ребута вм поднимается и работает.  
 2. CPU:  
 ```commandline
 # TYPE node_cpu_seconds_total counter
@@ -96,7 +96,7 @@ node_network_receive_bytes_total{device="lo"} 378
 node_network_transmit_bytes_total{device="eth0"} 402258
 node_network_transmit_bytes_total{device="lo"} 378
 ```
-3. ![Netdata](https://disk.yandex.ru/i/aTREjTe_71jkYw)  
+3. (https://disk.yandex.ru/i/aTREjTe_71jkYw) - скрин запущенной Netdata.  
 4. Да, можно:
 ```commandline
 vagrant@vagrant:~$ dmesg | grep virt
