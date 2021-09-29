@@ -24,6 +24,7 @@ Refresh Epoch 2
       rx pathid: 0, tx pathid: 0x0
 ```
 Всю маршрутную таблицу не стал отображать, отобразил только лучший маршрут.  
+
 2. Создайте dummy0 интерфейс в Ubuntu:  
 ```commandline
 root@vagrant:/home/vagrant# cat /etc/network/interfaces
@@ -62,6 +63,7 @@ default via 10.0.2.2 dev eth0 proto dhcp src 10.0.2.15 metric 100
 192.168.0.0/24 via 10.0.2.15 dev eth0 
 192.168.0.100 via 10.0.2.15 dev eth0
 ```
+
 3. Смотрим открытые TCP порты в Ubuntu:  
 ```commandline
 root@vagrant:/home/vagrant# netstat -nltp
@@ -77,6 +79,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 22 порт - служба SSH;  
 111 порт - слушает сервис rpcbind;  
 53 порт - локальный порт отвечающий за службы DNS.  
+
 4. Смотрим используемые UDP сокеты в Ubuntu:  
 ```commandline
 root@vagrant:/home/vagrant# netstat -nlup
@@ -89,5 +92,6 @@ udp6       0      0 :::111                  :::*                                
 ```
 53 порт - локальный порт отвечающий за службы DNS, служба systemd-resolve;  
 68 порт - служба systemd-network, возможно используется для Bootstrap Protocol Client, но я не уверен.  
+
 5. Используя diagrams.net, создайте L3 диаграмму:  
 https://disk.yandex.ru/i/PewwtQX8MwZykw
