@@ -31,7 +31,7 @@ RUN mkdir /var/lib/logs && \
     chown elasticsearch:elasticsearch /var/lib/data && \
     chown -R elasticsearch:elasticsearch /elasticsearch-7.16.2/ && \
     mkdir /elasticsearch-7.16.2/snapshots && \
-    chown elasticsearch:elasticsearch /elasticsearch-7.16.2/snapshots
+    chown -R elasticsearch:elasticsearch /elasticsearch-7.16.2/snapshots
 
 EXPOSE 9200 9300
 
