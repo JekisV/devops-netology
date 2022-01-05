@@ -15,3 +15,4 @@ compute-default-zone: ru-central1-a
 можно создать свой образ ami?_  
 С помощью программы Packer: https://www.packer.io/  
 * _Ссылка на репозиторий с исходной конфигурацией терраформа:_  
+https://github.com/JekisV/devops-netology/tree/master/terraform
