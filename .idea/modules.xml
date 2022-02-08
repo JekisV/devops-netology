@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/devops-netology.iml" filepath="$PROJECT_DIR$/.idea/devops-netology.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mnt-homeworks/new-repo/.idea/new-repo.iml" filepath="$PROJECT_DIR$/../mnt-homeworks/new-repo/.idea/new-repo.iml" />
     </modules>
   </component>
 </project>
