@@ -1,0 +1,15 @@
+---
+
+elasticsearch:
+  hosts:
+    node01-elastic_yandex_cloud:
+      ansible_host: 62.84.118.111
+      ansible_connection: ssh
+      ansible_user: centos
+
+kibana:
+  hosts:
+    node02-kibana_yandex_cloud:
+      ansible_host: 62.84.118.116
+      ansible_connection: ssh
+      ansible_user: centos
