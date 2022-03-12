@@ -1,0 +1,3 @@
+---
+# vars file for kibana
+supported_systems: ['CentOS', 'Red Hat Enterprise Linux', 'Ubuntu', 'Debian']
