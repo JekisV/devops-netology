@@ -21,5 +21,5 @@ _Приложите Role и RoleBinding для этого пользовател
 иным способом предоставили доступ этому пользователю._  
 
 Во вложении два файла:  
-user-role.yml  
-role-bin.yml  
+[user-role.yml](https://github.com/JekisV/devops-netology/blob/master/homework_12.02/user-role.yml)  
+[role-bin.yml](https://github.com/JekisV/devops-netology/blob/master/homework_12.02/role-bin.yml)  
