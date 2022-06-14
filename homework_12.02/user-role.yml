@@ -1,0 +1,9 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: test-space
+  name: test-user-role
+rules:
+- apiGroups: ["", "app"]
+  resources: ["pods", "pods/log"]
+  verbs: ["get", "list"]
