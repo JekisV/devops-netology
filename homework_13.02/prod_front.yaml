@@ -1,0 +1,45 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - image: jekisv/frontend
+        imagePullPolicy: IfNotPresent
+        name: frontend
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: "/static"
+          name: test-volume
+        env:
+          - name: BASE_URL
+            value: http://backend:9000
+      volumes:
+        - name: test-volume
+          persistentVolumeClaim:
+            claimName: test-dynamic-volume-claim
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+    - name: front
+      protocol: TCP
+      port: 80
