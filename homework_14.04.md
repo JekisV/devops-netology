@@ -10,7 +10,7 @@ NAME       SECRETS   AGE
 default    0         18m
 netology   0         4m13s
 ```
-3. Получаем информацию в формате YAML и/или JSON?  
+3. Получаем информацию в формате YAML и/или JSON:  
 ```commandline
 root@node1:/home/ubuntu# kubectl get serviceaccount netology -o yaml
 apiVersion: v1
